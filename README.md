@@ -11,7 +11,7 @@
   - `@Point` 指定切点，注释有用法
   - `@Aspect` 标记一个且切面类，该注解又被 `@Component` 标记过了，所以可以直接使用
 - IoC:
-  - `@Autowired` 自动注入，尽可以标注类字段
+  - `@Autowired` 自动注入，仅可以标注类字段，优先byType，有冲突则byName(fieldName)，再不行就失败
   - `@Bean` JavaConfig 形式配置
   - `@Bootstrap` 标记启动类，启动类必须有一个名为 `start` 的方法作为入口
   - `@Component/@Service/@Controller/@Respository` 支持组合注解
