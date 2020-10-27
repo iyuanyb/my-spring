@@ -19,7 +19,6 @@
   - `@DynamicValue` 可以动态更新的 @Value，功能已实现，但 Environment 还没弄，所以也是个半成品
   - `@Configuration` 标记配置类
   - `@Conditional` 条件
-  - `@ComponentScan` 类扫描，
   
 使用：
     主类调用 `Bootstrap.start("package_name");`，扫描包 package_name 下的所有类，并启动（`@Bootstrap`标记的类的 `start` 方法）。
